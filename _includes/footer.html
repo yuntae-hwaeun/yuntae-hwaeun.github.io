@@ -14,14 +14,7 @@
     {% endfor %}
   </ul>
   <ul class="copyright">
-    <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
-    {% if site.first_published %}
-      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
-      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
-    {% endif %}
-    {{ thisyear }}
-    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
-    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+    <li>언제 : 2019년 4월 7일 일요일 낮 12시</li>
+    <li>위치 : <a href="https://www.wiconvention.co.kr/location.php" target="_blank">WI 컨벤션</a></li>
   </ul>
 </footer>

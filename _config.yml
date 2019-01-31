@@ -2,16 +2,16 @@
 #
 
 # Site settings
-title: 양윤태 ♥ 서화은
+title: 양윤태 ♥ 서화은 결혼합니다.
 description: |
     2019년 4월 7일 일요일 낮 12시
     WI컨벤션 W홀
-owner: Hwaeun Seo # or company name
+owner: YuntaeHwaeun # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: heseo1013@naver.com
 url: "https://yuntae-hwaeun.github.io" # the base hostname & protocol for your site
 social:
-  instagram: https://instargram.com/heseo89
+  instagram: https://www.instargram.com/heseo89
 # Build settings
 markdown: kramdown
 #sass:
