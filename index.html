@@ -27,15 +27,13 @@ layout: landing
                                 <br><br>
 							</div>
                             <div class="contact_row">
-
-                                    <div id="phone_click_1" class="contact_button" data-type="a">
-                                    <img src="images/contact_icon_a.png" height="45" />
-                                    <div class="contact_button_txt">신랑측에 연락하기</div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_a">
+                                        <div class="contact_button_txt">신랑측에 연락하기</div>
+                                    </button>
                                 </div>
-                                
-                                    <div id="phone_click_2" class="contact_button" data-type="b">
-                                    <img src="images/contact_icon_b.png" height="45" />
-                                    <div class="contact_button_txt">신부측에 연락하기</div>
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal_b">
+                                        <div class="contact_button_txt">신부측에 연락하기</div>
+                                    </button>
                                 </div>
                                 
                             </div>
@@ -71,55 +69,49 @@ layout: landing
 						</section>
 					</section>
 
-<div class="mask_over form_layer" id="contact_a" style="width: 100%; display:none">
 
-    <img class="form_close_button" id="guest_user_form_close_button" src="./images/close_btn.png" height="17" />
-    <div class="form_title" style="background-image: url('./images/contact_icon_a.png'); line-height: 45px; ">
-        신랑측 연락처
+<!-- Modal -->
+<div class="modal fade" id="myModal_a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">신랑측 연락처</h4>
+      </div>
+      <div class="modal-body">
+          <button type="button" class="btn btn-default btn-lg">
+              <a href="tel:010-2646-8852">
+                  <span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;전화</span>
+              </a>
+          </button>
+          <button type="button" class="btn btn-default btn-lg">
+              <a href="sms:010-2646-8852">
+                  <span class="glyphicon glyphicon-envelope" aria-hidden="true">&nbsp;문자</span>
+              </a>
+          </button>
+      </div>
     </div>
-
-
-    <table cellspacing="0" cellpadding="0" class="contact_row_table">
-        <tr>
-            <td>신랑</td>
-            <td>
-                <a href="tel:010-2646-8852">
-                    전화하기
-                    <img class="contact_button_icon" src="./images/icon_tel.png" />
-                </a>
-            </td>
-            <td>
-                <a href="sms:010-2646-8852">
-                    문자하기
-                    <img class="contact_button_icon" src="./images/icon_sms.png" />
-                </a>
-            </td>
-        </tr>
-    </table>
+  </div>
 </div>
-<div class="mask_over form_layer" id="contact_b" style="width: 100%; display:none">
-
-    <img class="form_close_button" id="guest_user_form_close_button" src="./images/close_btn.png" height="17" />
-    <div class="form_title" style="background-image: url('./images/contact_icon_b.png'); line-height: 45px; ">
-        신부측 연락처
+<div class="modal fade" id="myModal_b" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">신부측 연락처</h4>
+      </div>
+      <div class="modal-body">
+          <button type="button" class="btn btn-default btn-lg">
+              <a href="tel:010-7202-7083">
+                  <span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;전화</span>
+              </a>
+          </button>
+          <button type="button" class="btn btn-default btn-lg">
+              <a href="sms:010-7202-7083">
+                  <span class="glyphicon glyphicon-envelope" aria-hidden="true">&nbsp;문자</span>
+              </a>
+          </button>
+      </div>
     </div>
-
-
-    <table cellspacing="0" cellpadding="0" class="contact_row_table">
-        <tr>
-            <td>신부</td>
-            <td>
-                <a href="tel:010-7202-7083">
-                    전화하기
-                    <img class="contact_button_icon" src="./images/icon_tel.png" />
-                </a>
-            </td>
-            <td>
-                <a href="sms:010-7202-7083">
-                    문자하기
-                    <img class="contact_button_icon" src="./images/icon_sms.png" />
-                </a>
-            </td>
-        </tr>
-    </table>
+  </div>
 </div>
